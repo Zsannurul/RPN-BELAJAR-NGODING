@@ -8,6 +8,8 @@ function bandingkanAngka(angka1, angka2) {
   //code disini
   if (angka2 > angka1) {
     return true;
+  } else if (angka1 === angka2) {
+    return -1;
   } else {
     return false;
   }
@@ -32,7 +34,7 @@ function balikKata(kata) {
   // you can only write your code here!
   let katanya = kata.split("");
   let kataTerbalik = katanya.reverse();
-  let stringTerbalik = kataTerbalik.join();
+  let stringTerbalik = kataTerbalik.join("");
   return stringTerbalik;
 }
 
