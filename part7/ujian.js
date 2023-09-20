@@ -80,24 +80,15 @@ console.log("------------------------");
 //   Function akan me-return true jika jumlah karakter x sama dengan jumlah karakter o, dan false jika tidak.
 console.log("soal 4 (cek dua karakter) ");
 function xo(str) {
-  // Inisialisasi variabel untuk menghitung jumlah karakter x dan o
   var countX = 0;
   var countO = 0;
-
-  // Iterasi melalui setiap karakter dalam string
   for (var i = 0; i < str.length; i++) {
-    // Jika karakter saat ini adalah 'x', tambahkan ke countX
     if (str[i] === "x") {
       countX++;
-    }
-    // Jika karakter saat ini adalah 'o', tambahkan ke countO
-    else if (str[i] === "o") {
+    } else if (str[i] === "o") {
       countO++;
     }
   }
-
-  // Bandingkan jumlah karakter x dan o
-  // Jika jumlahnya sama, kembalikan true; jika tidak, kembalikan false
   return countX === countO;
 }
 
